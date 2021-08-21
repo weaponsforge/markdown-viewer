@@ -3,7 +3,7 @@ name: Deploy to Github Pages
 on:
   push:
     branches:
-      - master
+      - sub-directory-ghpages
 
 jobs:
   lint:
@@ -21,6 +21,8 @@ jobs:
     name: Build
     needs: lint
     runs-on: ubuntu-18.04
+    env:
+      - REACT_APP_PUBLIC_URL: ${{ secrets.REACT_APP_PUBLIC_URL }}
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v1
