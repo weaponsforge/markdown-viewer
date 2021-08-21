@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.562a2132.chunk.css",
+    "main.js": "/static/js/main.14a5a551.chunk.js",
+    "main.js.map": "/static/js/main.14a5a551.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ffb358d2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ffb358d2.js.map",
+    "static/js/2.e7b60042.chunk.js": "/static/js/2.e7b60042.chunk.js",
+    "static/js/2.e7b60042.chunk.js.map": "/static/js/2.e7b60042.chunk.js.map",
+    "static/js/3.45906496.chunk.js": "/static/js/3.45906496.chunk.js",
+    "static/js/3.45906496.chunk.js.map": "/static/js/3.45906496.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.562a2132.chunk.css.map": "/static/css/main.562a2132.chunk.css.map",
+    "static/js/2.e7b60042.chunk.js.LICENSE.txt": "/static/js/2.e7b60042.chunk.js.LICENSE.txt",
+    "static/media/README.md": "/static/media/README.05172325.md",
+    "static/media/create-cra-app.md": "/static/media/create-cra-app.7314228c.md",
+    "static/media/how-to-install-nodejs.md": "/static/media/how-to-install-nodejs.9766613b.md",
+    "static/media/markdown.md": "/static/media/markdown.4def4645.md"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ffb358d2.js",
+    "static/js/2.e7b60042.chunk.js",
+    "static/css/main.562a2132.chunk.css",
+    "static/js/main.14a5a551.chunk.js"
+  ]
+}
