@@ -41,6 +41,8 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v1
+      - name: Install Dependencies
+        run: npm install
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
