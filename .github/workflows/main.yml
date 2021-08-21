@@ -21,8 +21,6 @@ jobs:
     name: Build
     needs: lint
     runs-on: ubuntu-18.04
-    env:
-      - REACT_APP_PUBLIC_URL: ${{ secrets.REACT_APP_PUBLIC_URL }}
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v1
@@ -30,6 +28,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env:
+          REACT_APP_PUBLIC_URL: ${{ secrets.REACT_APP_PUBLIC_URL }}
       - name: Archive Development Artifact
         uses: actions/upload-artifact@master
         with:
