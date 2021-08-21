@@ -16,6 +16,17 @@ jobs:
         run: npm install
       - name: Lint
         run: npm run lint
+
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v1
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
       - name: Archive Development Artifact
         uses: actions/upload-artifact@master
         with:
