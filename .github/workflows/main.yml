@@ -3,7 +3,7 @@ name: Deploy to Github Pages
 on:
   push:
     branches:
-      - gh-pages-deployment'
+      - gh-pages-deployment
 
 jobs:
   lint:
