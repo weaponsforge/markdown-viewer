@@ -18,6 +18,17 @@
 `git clone https://github.com/weaponsforge/markdown-viewer.git`
 2. Install dependencies.  
 `npm install`
+3. Temporarily edit `package.json` when working on localhost, to workaround CRA's internal `PUBLIC_URL` naming mechanism. Remove `/markdown-viewer` from the **homepage** key:  
+   ```
+   {
+     "homepage": "https://weaponsforge.github.io",
+     "name": "markdown-viewer",
+     ...
+   }
+   ```
+   > **NOTES:** 
+   > - Remember to restore back to `"homepage": "https://weaponsforge.github.io/markdown-viewer"` when deploying to Github Pages. **/markdown-viewer** is required when the CRA is deployed under a `https://{username}.github.io/{repo-name}` Github Pages hosting.
+   > - Set the GitHub repository's secret variable `secret.REACT_APP_PUBLIC_URL=/markdown-viewer`
 
 ## Available Scripts
 

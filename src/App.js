@@ -5,7 +5,7 @@ import './App.css'
 
 function App (props) {
   return (
-    <Router>
+    <Router basename={process.env.REACT_APP_PUBLIC_URL || '/'}>
       <Navigation />
       <Switch>
         {routes.map((entry, index) => (<Route exact path={entry.path} key={index} render={(props) =>

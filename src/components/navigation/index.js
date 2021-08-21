@@ -12,7 +12,7 @@ function Navigation () {
     <Container maxWidth='md'>
       <Card className={classes.root}>
         <CardContent>
-          <Typography variant='h4'>Markdown Testing Site!</Typography>
+          <Typography variant='h4'>Markdown Testing Site</Typography>
           <Link to='/'>
             <Typography variant='subtitle1' component='span'>Home</Typography>
           </Link> &nbsp;| &nbsp;
