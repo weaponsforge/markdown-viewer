@@ -1,6 +1,6 @@
 {
-  "homepage": "https://weaponsforge.github.io/markdown-viewer/",
-  "name": "cra-blog",
+  "homepage": "https://weaponsforge.github.io/markdown-viewer",
+  "name": "markdown-viewer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
