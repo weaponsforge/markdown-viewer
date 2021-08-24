@@ -1,5 +1,7 @@
 # How To Create a React App Using CRA
 
+### *This is a 100% valid Markdown file.*
+
 ## Requirements
 
 1. NodeJS
