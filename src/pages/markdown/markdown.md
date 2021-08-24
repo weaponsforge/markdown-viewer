@@ -1,5 +1,7 @@
 # Markdown in React
 
+### *This is a 100% valid Markdown file.*
+
 > **Description**  
 > Testing markdown file rendering in react using the [**react-markdown**](https://www.npmjs.com/package/react-markdown) nodejs library.  
 >
