@@ -1,20 +1,27 @@
-import MarkdownViewer from './components/markdown_viewer'
+import MarkdownBlogPage from './domain/blog/markdown_viewer'
+import HtmlBlogPage from './domain/blog/html_viewer'
+import Blog from './components/blog'
 
 const routes = [
   {
-    path: '/home',
+    path: '/blog/:id',
     isProtected: false,
-    component: MarkdownViewer
+    component: HtmlBlogPage
   },
   {
-    path: '/:id',
+    path: '/notes/:id',
     isProtected: false,
-    component: MarkdownViewer
+    component: MarkdownBlogPage
+  },
+  {
+    path: '/home',
+    isProtected: false,
+    component: Blog
   },
   {
     path: '/',
     isProtected: false,
-    component: MarkdownViewer
+    component: Blog
   }
 ]
 

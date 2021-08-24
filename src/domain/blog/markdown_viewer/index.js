@@ -11,20 +11,19 @@ import { coldarkCold } from 'react-syntax-highlighter/dist/esm/styles/prism'
 // Custom CSS
 import './custom.css'
 
-function MarkdownViewer (props) {
+// Renders markdown files as a static web page.
+function MarkdownBlogPage (props) {
   const [doc, setDoc] = useState('Loading...')
 
   useEffect(() => {
     try {
       const mdFile = props.match.params.id ? props.match.params.id : 'markdown'
-      const md = require(`../../markdown/${mdFile}.md`)
+      const md = require(`../../../pages/markdown/${mdFile}.md`)
 
       fetch(md.default).then((response) => response.text()).then((text) => {
         setDoc(text)
       })
     } catch (err) {
-      console.log(err.message)
-      console.log('not found')
       setDoc('Not found')
     }
   }, [props.history, props.match.params.id])
@@ -60,9 +59,9 @@ function MarkdownViewer (props) {
   )
 }
 
-MarkdownViewer.propTypes = {
+MarkdownBlogPage.propTypes = {
   history: PropTypes.object,
   match: PropTypes.object
 }
 
-export default MarkdownViewer
+export default MarkdownBlogPage
