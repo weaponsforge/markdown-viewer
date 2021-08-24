@@ -37,5 +37,10 @@ Check the codebase for lint errors.
 ### `npm run lint:fix`
 Fix lint erros from the codebase.
 
+### `npm run deply`
+- Deploy to GitHub Pages from commandline.
+- Requires Git and works only on local PC.
+- Read on the GitHub Actions workflow .yml for production deployment.
+
 @weaponsforge  
 20210820

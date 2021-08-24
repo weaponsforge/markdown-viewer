@@ -46,7 +46,7 @@ Bulid the app for production deployment.
 Check the codebase for lint errors.
 
 ### `npm run lint:fix`
-Fix lint erros from the codebase.
+Fix lint errors from the codebase.
 
 @weaponsforge  
 20210820
